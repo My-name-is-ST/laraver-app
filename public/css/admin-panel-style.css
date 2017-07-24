@@ -1,22 +1,32 @@
+/*TOP MENU IN HEADER*/
 .panel_menu{
     background: #df0031;
-    padding-top: 10px;
-    padding-bottom:10px;
+    padding-top: 13px;
+    padding-bottom:13px;
 }
 .menu_admin a{
-    display: inline-block;
-    padding-top: 3px;
-    padding-bottom:3px;
-    font-size: 16px;
-    font-family:"Times New Roman";
-    color: #FFFFFF;
-    text-transform: uppercase;
+     display: inline-block;
+     padding:7px;
+     font-size: 16px;
+     font-family:"Times New Roman";
+     color: #FFFFFF;
+     text-transform: uppercase;
+     text-decoration: none;
 
+ }
+.menu_admin a:hover{
+    background-color: #FFFFFF;
+    color: #df0031;
 }
+
 .menu_admin li{
-    display: inline-block;
+
     padding-right: 25px;
+    display: inline-block;
+    text-align: center;
 }
+/*_____________________________*/
+
 .admin_content{
     background-color: #f5f8fa;
     color: #080808;
@@ -28,9 +38,6 @@
     padding-top: 20px;
     text-align: center;
     color: #f5f8fa;
-}
-.table thead{
-    text-transform: uppercase;
 }
 
 .form-group div{
@@ -50,13 +57,7 @@
     box-shadow: #df0031 2px -2px 5px;
     z-index: 20;
 }
-#p{
-    padding-right: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-left: 0px;
 
-}
 .text{
     padding-left: 2px;
     background-color: #FFFFFF;
@@ -66,12 +67,14 @@
     overflow: hidden;
     margin-bottom: 5px;
 }
+/*BLOCK INFORMATION IN EACH MODEL*/
 .info{
-    padding-top: 5px;
+    padding-top: 7px;
 }
 .info span{
     text-transform: uppercase;
 }
+/*_________________________*/
 .img img{
     width: 100%;
     max-height: 250px;
@@ -80,28 +83,119 @@
 .action{
     padding-top: 15px;
     position: relative;
-    bottom: -5px;
+    bottom: 0px;
     z-index: 1;
 }
 #r{
     float: right;
 }
+
+.padding_form_adm div{
+    padding-bottom: 25px;
+}
+/*SERVICE PAGE ICON IMAGE*/
+#iconImg{
+    content: '>>  ';
+    font-size: 35px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+/*_________________________*/
+
+/*TEAM PAGE */
+.soc_net ul li{
+    display: inline-block;
+    padding-left: 1px;
+}
+.soc_net ul li a:hover{
+    cursor: pointer;
+}
+.soc_net ul{
+    list-style: none;
+}
+/*_________________________*/
+
+/*LEFT BUR ADD MENU*/
+#fix li, #fix ul{
+    display: block;
+    position: relative;
+    padding-left: 5px;
+}
+#fix a{
+    display: block;
+    padding: 7px;
+    width: 100%;
+    color: #f5f8fa;
+    font-family: Bradley Hand ITC,Amienne;
+    font-size: 16px;
+}
+#fix a:hover{
+    color: #df0031;
+    text-decoration: none;
+    font-style: oblique;
+    background-color: #f5f8fa;
+}
 #fix{
     position: fixed;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
     left: -2px;
     top: 25%;
     z-index: 10000;
-    background-color: #f5f8fa;
+    background-color: #df0031;
+
+}
+#fix label{
+    border-top: solid #f5f8fa;
+    color: #f5f8fa;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family:Amienne,Bradley Hand ITC;
+    font-size: 24px;
 }
 #fix div{
     border: solid 2px #df0031;
     padding: 20px 0;
     box-shadow: #df0031 2px -2px 5px;
-    left: 20px;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 5px;
+    left: 5px;
+    border-top-right-radius: 6px;
 }
+@media (max-width:550px){
+    #fix{
+        position: relative;
+        left: 0px;
+        background-color: #df0031;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: #df0031 0px 3px 15px;
+    }
+    #fix label{
+        border-top: solid #FFFFFF;
+        display: block;
+        text-align: center;
+        color: #FFFFFF;
+        font-family: Bradley Hand ITC,Amienne;
+        font-size: 24px;
+    }
+    #fix div{
+        border: none;
+        box-shadow:none;
+
+    }
+    #fix a{
+        color: #FFFFFF;
+        font-family:Amienne, Bradley Hand ITC;
+        font-size: 20px;
+        width: 100%;
+        display: inline-block;
+    }
+    #fix li{
+        display: inline-block;
+        width: 49%;
+        text-align: center;
+    }
+    #fix a:hover{
+        background-color: #f5f8fa;
+        font-size: 24px;
+    }
+}
+/*_________________________*/

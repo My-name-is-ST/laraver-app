@@ -31,10 +31,10 @@ class ServiceEditController extends Controller
             }
         }
         if(view()->exists('admin.service_edit')){
-            $old =$service->toArray();
+
             $data=[
                 'title'=>'Service Edit Controller',
-                'service'=>$service
+                'service'=>$service,
             ];
             return view('admin.service_edit',$data);
         }

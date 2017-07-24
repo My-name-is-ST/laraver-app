@@ -10,12 +10,13 @@
         @include('admin.temp.header')
     @endsection
     @yield('header')
-</header>
 
-@section('left_bar')
-    @include('admin.temp.left_bar')
-@endsection
-@yield('left_bar')
+        @section('left_bar')
+            @include('admin.temp.left_bar')
+        @endsection
+        @yield('left_bar')
+
+</header>
 
 @yield('content')
 

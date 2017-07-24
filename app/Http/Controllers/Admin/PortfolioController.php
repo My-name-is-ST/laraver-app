@@ -12,14 +12,13 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Portfolio;
 use App\Filter;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request;
 
 class PortfolioController extends Controller
 {
-    public function execute(){
-
+    public function execute(Request $request){
         if(view()->exists('admin.portfolio')){
-            $portfolios=Portfolio::all();
+            $portfolios=Portfolio::with('filter')->get();
             $data=[
               'title'=>'Admin-PortfolioController',
                 'portfolios'=>$portfolios,

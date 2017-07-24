@@ -12,10 +12,11 @@
 */
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\IndexController;
+use Illuminate\Support\Facades\Auth;
 //users' part
 Route::group([],function(){
     Route::get('/',['uses'=>'IndexController@execute','as'=>'home']);
-    Route::post('/sendMail',['uses'=>'IndexController@execute','as'=>'sendMail']);
+    Route::post('/',['uses'=>'IndexController@execute','as'=>'sendMail']);
     Route::get('/page/{alias}',['uses'=>'PageController@execute','as'=>'page']);
     Route::auth();
 });

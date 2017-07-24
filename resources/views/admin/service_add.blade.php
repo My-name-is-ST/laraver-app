@@ -1,8 +1,8 @@
 @extends('layouts.admin')
 @section('content')
+
     <section class="admin_content">
         <div class="container">
-            <div class="row">
                 <form method="post" action="{{route('serviceAdd')}}">
                     <div class="col-xs-12">
                         <div class="form-group">
@@ -30,7 +30,6 @@
                     {{csrf_field()}}
                 </form>
             </div>
-        </div>
     </section>
     <script>
         CKEDITOR.replace('text')

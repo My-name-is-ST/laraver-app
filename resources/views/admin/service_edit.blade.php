@@ -20,7 +20,7 @@
                         <div class="form-group">
                             <label class="col-xs-4 control-label">description:</label>
                             <div class="col-xs-6">
-                                <textarea class="ckeditor" name="text" value="">{{$service['icon']}}</textarea>
+                                <textarea class="ckeditor" name="text" value="">{{$service['text']}}</textarea>
                             </div>
                         </div>
                         <div class="col-xs-offset-8 col-xs-10">

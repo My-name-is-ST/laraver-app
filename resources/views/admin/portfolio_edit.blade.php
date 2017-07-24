@@ -8,7 +8,6 @@
     </style>
     <section class="admin_content">
         <div class="container">
-            <div class="row">
                 <div class="col-lg-12">
                     <form class="padding_form_adm" action="{{route('portfolioEdit',['portfolio'=>$portfolio['id']]) }}" method="post" enctype="multipart/form-data">
                         <div class="form-group">
@@ -26,7 +25,7 @@
                         <div class="form-group">
                             <label class="col-xs-4 control-label">filter:</label>
                             <div class="col-lg-6">
-                                <select class="form-control " value="{{$portfolio['filters_id']}}" name="filters_id">
+                                <select class="form-control "  name="filter_id">
                                     @if(isset($filters))
                                         @foreach($filters as $filter)
                                             <option value="{{$filter->id}}">{{$filter->name}}</option>
@@ -41,14 +40,13 @@
                                 <input type="file" name="img"  accept="image/jpeg,image/png,image/gif" class="filestyle" data-buttonName="btn-primary" data-icon="false">
                             </div>
                         </div>
-                        <div class="col-xs-offset-8 col-xs-10">
+                        <div class="col-xs-offset-8 col-xs-2">
                             <input type="hidden"name="old_img" value="{{$portfolio['img']}}">
                             <button class="btn btn-primary" type="submit">Save Page</button>
                         </div>
                         {{csrf_field()}}
                     </form>
                 </div>
-            </div>
         </div>
     </section>
 @endsection

@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,7 +11,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        \App\User::create([
+            'name'=>env('MAIL_NAME_ADMIN'),
+            'email'=>env('MAIL_ADMIN'),
+            'password'=>env('PASSWORD_ADMIN')
+        ]);
          //$this->call(UsersTableSeeder::class);
-        $this->call(Users2TableSeed::class);
+        $this->call(ClientSeeder::class);
+        $this->call(FilterSeeder::class);
+        $this->call(PageSeeder::class);
+        $this->call(PortfolioSeeder::class);
+        $this->call(ServiceSeeder::class);
+        $this->call(TeamSeeder::class);
     }
 }

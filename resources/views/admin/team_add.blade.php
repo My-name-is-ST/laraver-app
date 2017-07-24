@@ -1,5 +1,4 @@
 @extends('layouts.admin')
-
 @section('content')
 <section class="admin_content">
     <div class="container">

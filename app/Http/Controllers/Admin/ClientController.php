@@ -15,10 +15,10 @@ class ClientController extends Controller
 {
     public function execute(){
         if(view()->exists('admin.client')){
-            $page=Client::all();
+            $clients=Client::all();
             $data=[
-                'title'=>'Admin-PageController',
-                'pages'=>$page,
+                'title'=>'Admin-ClientController',
+                'clients'=>$clients,
             ];
             return view('admin.client',$data);
         }

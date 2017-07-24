@@ -14,7 +14,7 @@
                                 <span><i class="fa {{$service->icon}}"> </i></span>
                             </div>
                             <h3 class="animated fadeInUp wow">{{$service->name}}</h3>
-                            <p class="animated fadeInDown wow">{{$service->text}}</p>
+                            <p class="animated fadeInDown wow">{!!$service->text!!}</p>
                         </div>
                     </div>
                     @if(($k+1)%3==0)
