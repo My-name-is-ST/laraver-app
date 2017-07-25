@@ -11,6 +11,6 @@ class Filter extends Model
     public $timestamps=false;
 
     public function portfolio(){
-        return $this->belongsToMany('App\Portfolio','filters_id','id');
+        return $this->belongsTo('App\Portfolio','filters_id','id');
     }
 }
